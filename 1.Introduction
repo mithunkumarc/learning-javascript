@@ -30,3 +30,11 @@ Using document.write() after an HTML document is fully loaded, will delete all e
     <button type="button" onclick="document.write(5 + 6)">Try it</button> 
 
 # onclick of button , <h1> and <p> data will be deleted
+
+
+**************************************************************************************************
+
+
+use typeof(values) function to find out datatype
+
+*************************************************************************************************
