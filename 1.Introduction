@@ -38,3 +38,33 @@ Using document.write() after an HTML document is fully loaded, will delete all e
 use typeof(values) function to find out datatype
 
 *************************************************************************************************
+
+uninitialized variable prints undefined as output
+null is an object
+
+
+1.by value undefined and null are same
+	undefined == null
+	true
+
+2.by type undefined is a value but null is an object
+	undefined === null
+	false
+
+
+3.typeof 23 and '23'
+	typeof(23)
+	"number"
+
+	typeof('23')
+	"string"
+
+3.by value 23 and '23' are same
+	23 == '23'
+	true
+
+4.by type, 23 is number , '23' is string
+	23 === '23'
+	false
+
+
