@@ -1,1 +1,11 @@
+1.using object() constructor, creates an empty object
 
+let person = new Object();
+typeof(person);
+>> "object"
+
+
+2.
+
+https://coderwall.com/p/p5cf5w/different-ways-of-creating-an-object-in-javascript
+https://hackernoon.com/create-objects-in-javascript-10924cfa9fc7
