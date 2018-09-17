@@ -4,7 +4,8 @@ let person = new Object();
 typeof(person);
 >> "object"
 
-
+**********************************************************
+add singleton pattern too
 2.
 important : 
 https://codeburst.io/various-ways-to-create-javascript-object-9563c6887a47
