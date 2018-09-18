@@ -1,0 +1,93 @@
+JsObjects are 
+    writable: I can modify their values, I can update a property just assigning a new value to it.
+    
+    var newObject = {a: 1};
+    Object.defineProperty( newObject, 'a', {
+      value: "some value",
+      writable: false,
+    });
+
+    >> newObject
+    // {a: "some value"}
+
+    newObject.a = 'some other new value';
+    // "some other new value"
+
+    >> newObject
+    // Object {a: "some value"} //still contains old value
+   
+    *************************************************************************************************************
+    enumerable: I can access to all of them using a for..in loop. 
+    Also, enumerable property keys of an object are returned using Object.keys method.
+    
+    
+    var newObject = {};
+    Object.defineProperty( newObject, 'a', {
+    value: "some value",
+    enumerable: true,
+    });
+
+    // Object {a: "some value"}
+
+    for (var key in newObject) { console.log(key) }
+    // a
+
+    Object.keys(newObject);
+    ["a"]
+    
+    
+    ***** disabling enumerable ****
+    
+    var newObject = {};
+    Object.defineProperty( newObject, 'a', {
+    value: "some value",
+    enumerable: false,
+    });
+    // Object {a: "some value"}
+
+    for (var key in newObject) { console.log(key) }
+    // a
+
+    Object.keys(newObject);
+    []
+    
+    *******************************************************************************
+    
+    
+    configurable: I can modify the behavior of the property, so I can make them non-enumerable, 
+    non-writable or even non-cofigurable if I feel like doing so. 
+    Configurable properties are the only ones that can be removed using the delete operator. 
+    
+    *** configurable ***
+    
+    let newObject = {};
+    Object.defineProperty( newObject, 'a', {
+    value: "some value",
+    configurable: true,
+    });
+    // Object {a: "some value"}
+
+    delete newObject.a;
+    // true
+
+    newObject
+    // Object {}
+    
+    *** Non configurable ***
+    
+    let newObject = {}
+    Object.defineProperty( newObject, 'a', {
+    value: "some value",
+    configurable: false,
+    });
+    // Object {a: "some value"}
+
+    delete newObject.a;
+    // false
+
+    newObject
+    // Object {a: "some value"}
+    
+    
+    *********************************************************************
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
