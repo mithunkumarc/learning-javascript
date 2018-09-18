@@ -1,0 +1,84 @@
+Infinity : 
+
+The global Infinity property is a numeric value representing infinity.
+
+var maxNumber = Math.pow(10, 1000); // max positive number
+
+if (maxNumber === Infinity) {
+  console.log("Let's call it Infinity!");
+  // expected output: "Let's call it Infinity!"
+}
+
+console.log(1 / maxNumber);
+// expected output:(1/infinity) 0
+
+
+**********************************************************************************************
+
+NaN
+
+The global NaN property is a value representing Not-A-Number.
+
+function sanitise(x) {
+  if (isNaN(x)) {
+    return NaN;
+  }
+  return x;
+}
+
+console.log(sanitise('1'));
+// expected output: "1"
+
+console.log(sanitise('NotANumber'));
+// expected output: NaN
+
+*********************************************************************************************
+
+undefined :
+
+The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types.
+
+function test(t) {
+  if (t === undefined) {
+     return 'Undefined value!';
+  }
+  return t;
+}
+
+var x;
+
+console.log(test(x));
+// expected output: "Undefined value!"
+
+**********************************************************************************************
+
+null : 
+
+
+
+The value null represents the intentional absence of any object value. It is one of JavaScript's primitive values.
+
+function getVowels(str) {
+  var m = str.match(/[aeiou]/gi);
+  if (m === null) {
+    return 0;
+  }
+  return m.length;
+}
+
+console.log(getVowels('sky'));
+// expected output: 0
+
+**********************************************************************************************
+
+Difference between undefined and null
+
+typeof null          // "object" (not "null" for legacy reasons)
+typeof undefined     // "undefined"
+null === undefined   // false
+null  == undefined   // true
+null === null        // true
+null == null         // true
+!null                // true
+isNaN(1 + null)      // false
+isNaN(1 + undefined) // true
