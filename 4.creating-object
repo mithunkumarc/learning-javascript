@@ -69,6 +69,8 @@ The new keyword in front of any function turns the function call into constructo
 4.Object.create() 
 allowed to create object with more atrribute options like configurable, enumerable, writable and value as shown below
 
+/*cars becomes the new object with __proto__ is equal to Object.prototype, expand cars in console , cars become child
+of object*/
 let cars = Object.create(Object.prototype,
 {
 	name:{
@@ -87,8 +89,48 @@ let cars = Object.create(Object.prototype,
 console.log(cars.name);
 output : Fiesta
 
+____------------------------------------another example------------------------------------------______
+The Object.create() method creates a new object, 
+using an existing object to provide the newly created object's __proto__ .
 
-**********************************************************
+
+const person = {
+  isHuman: false,
+  printIntroduction: function () {
+    console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+  }
+};
+
+const me = Object.create(person);
+
+me.name = "Matthew"; // "name" is a property set on "me", but not on "person"
+me.isHuman = true; // inherited properties can be overwritten
+
+me.printIntroduction();
+// output: "My name is Matthew. Am I human? true"
+
+expand "me" object in console , expand __proto__ , you will see properties of person inherited to "me" 
+*******************************************************************************************************
+
+5.Create JavaScript Object using ES6 classes
+
+class Vehicle {
+  constructor(name, maker, engine) {
+    this.name = name;
+    this.maker =  maker;
+    this.engine = engine;
+  }
+}
+let bike1 = new Vehicle('Hayabusa', 'Suzuki', '1340cc');
+let bike2 = new Vehicle('Ninja', 'Kawasaki', '998cc');
+console.log(bike1.name);    //Output: Hayabusa
+console.log(bike2.maker);   //Output: Kawasaki
+
+
+******************************************************************************************************
+
+
+
 add singleton pattern too
 2.
 important : 
