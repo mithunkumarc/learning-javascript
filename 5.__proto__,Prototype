@@ -1,0 +1,49 @@
+__proto__ : property of an object, contains list of properties inherited from prototype(parent) object
+
+prototype : source from which object being created
+
+
+
+function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+}
+
+var arun = new Person("arun", "kumar" , 22, "black");
+//arun object created from Person constructor, so Person can be considered as prototye.
+
+Person prototype makes sures that arun will inherit properties from Person.
+
+expand arun object in console, arun will have __proto__ property, expand __proto__ property , you will find Person properties.
+
+Note : 
+ Person.prototype.nationality = "English"; 
+ use prototype keyword to add properties , it will reflect in all child objects of Person prototype.
+
+
+>>arun.nationality
+"English"
+
+
+*****************************
+another example : 
+
+#Foo is prototype, decides what properties a child object of Foo can have
+function Foo(name) {
+  this.name = name;
+}
+
+var b = new Foo('b');
+var a = new Foo('a');
+b.say = function() {
+  console.log('Hi from ' + this.whoAmI());
+}
+
+//both a.__proto__ and Foo.prototype has only property called name, returns true
+console.log(a.__proto__ === Foo.prototype); // true
+//a and b share same properties from Foo so true
+console.log(a.__proto__ === b.__proto__); // true
+
+
