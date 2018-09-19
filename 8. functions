@@ -1,3 +1,8 @@
+function can be defined globally or function can be defined as a part of constructor function.
+function inside constructor function represents behaviour of object.(sendMessage for mobile object)
+constructor function acts like a prototype for objects created from it.
+all properties of constructor function will be inherited to object, which are visible in __proto__ property.
+*************************************************************************
 Function example : 
 
 function square(number){    
@@ -26,6 +31,7 @@ console.log('new',y);
 
 **************************************************************************************************
 Anonymous function : 
+
 functions can also be created by a function expression.
 Such a function can be anonymous; it does not have to have a name.
 
@@ -63,5 +69,24 @@ output >>
  729
 
 **************************************************************************************************
+Nested functions and closures
 
+The nested (inner) function is private to its containing (outer) function. It also forms a closure.
+
+The inner function can be accessed only from statements in the outer function(outer function can just call innerfunction).
+The inner function forms a closure: 
+the inner function can use the arguments and variables of the outer function, 
+while the outer function cannot use the arguments and variables of the inner function.
+
+
+
+
+function addSquares(a,b){
+	function square(x){
+    	return x * x;
+	}
+	return square(a) + square(b);
+}
+let a = addSquares(2,3);
+console.log(a);
 
