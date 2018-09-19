@@ -1,0 +1,62 @@
+similar to lambda in java and python
+An arrow function expression (previously, and now incorrectly known as fat arrow function) 
+has a shorter syntax compared to function expressions and does not have its own this, arguments, super, or new.target.
+Arrow functions are always anonymous(no name).
+
+1.Map : The map() method creates a new array with the results of calling a function for every array element. 
+
+example : get the size of eachelement
+
+var elements = [
+	'Hydrogen',
+	'Helium',
+	'Lithium',
+	'Beryllium'    
+];
+var a2 = elements.map(function(s){ return s.length; });
+console.log(a2);
+
+var a3 = elements.map(s => s.length);
+console.log(a3);
+output :: [8, 6, 7, 9]
+output :: [8, 6, 7, 9]
+
+
+******************************************************************************************************************
+
+filter() 
+
+example : filtering sports whose number of letters is greater than 4.
+
+var sports = [
+	"cricket",
+	"chess",
+	"Tennis",
+	"FootBall",
+	"ludo"	
+]
+var newSports = sports.filter(s => s.length > 4);
+console.log(newSports);
+output :  ["cricket", "chess", "Tennis", "FootBall"]
+
+*************************************************************************************************************
+
+reduce() :
+The reduce() method executes a reducer function (that you provide) on each member of the array 
+resulting in a single output value.
+
+let group = [2,4,6,8,10];
+let sum = group.reduce((x,y) => x + y);
+console.log(sum);
+
+output:  30   //sum of all elements
+
+
+*************************************************************************************************************
+
+map() : array as output
+filter() : array as output
+reduce() : single output value
+
+
+
