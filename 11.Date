@@ -53,3 +53,21 @@ output >> 21
 output >> 55
 
 *****************************************************************************
+12 hour format time
+
+function JSClock() {
+  var time = new Date();
+  var hour = time.getHours();
+  var minute = time.getMinutes();
+  var second = time.getSeconds();
+  var temp = '' + ((hour > 12) ? hour - 12 : hour);
+  if (hour == 0)
+    temp = '12';
+  temp += ':'+minute;
+  temp += ':'+second;
+  temp += (hour >= 12) ? ' P.M.' : ' A.M.';
+  return temp;
+}
+>> output : 
+            JSClock();
+            "6:40:34 P.M."
