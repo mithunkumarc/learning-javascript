@@ -1,0 +1,26 @@
+Function example : 
+
+function square(number){    
+	return number * number;
+}
+square(5);
+output >> 25
+
+***********************************************************************
+function can be used to change the state/property value of an object
+
+function myFunc(theObject){
+	theObject.make = 'Toyota';
+}
+
+var myCar = {make : 'Honda', model: 'Accord', year: 1998};
+var x,y;
+
+x = myCar.make;
+myFunc(myCar);
+y = myCar.make;
+console.log('old',x);
+console.log('new',y);
+>> old Honda
+>> new Toyota
+
