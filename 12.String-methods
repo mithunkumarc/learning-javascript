@@ -1,0 +1,30 @@
+properties and methods
+************************************************************************************************
+1.length : property 
+The length property returns the length of a string:
+
+let text = 'hello javascript';
+console.log(text.length);
+output >>  16
+
+************************************************************************************************
+2.indexOf : function : The indexOf() method returns the index of (the position of) the first occurrence of a 
+                      specified text in a string:
+
+let message =  "Please locate where 'locate' occurs!";
+let pos = message.indexOf("locate");
+>> pos
+>> 7  //count from zero
+
+************************************************************************************************
+
+3.lastIndexOf() : function : finds last occurence of a specified string
+
+let str1 = 'please locate where "locate" occurs!';
+let position1 = str1.lastIndexOf('locate');
+>> position1
+>> 21
+
+****************************************************************************************************
+
+
