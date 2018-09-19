@@ -88,5 +88,37 @@ function addSquares(a,b){
 	return square(a) + square(b);
 }
 let a = addSquares(2,3);
-console.log(a);
+console.log(a); //output : 4+9 = 13
 
+***********************************************************************************
+
+default parameters : 
+Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+
+let add = function(a,b=0){		//if there is no value for b, zero will be initialized to variable b
+	return a + b;
+}
+
+add(3,4);
+output >> 7
+add(4);
+output >> 4
+
+
+*****************************************************************************************
+
+Rest parameters : 
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array.
+In the example, we use the rest parameters to collect arguments from the second one to the end. 
+
+
+
+function example(first,...theArgs){			//first will get first element, remaining goes to theArgs array
+	console.log("first element ",first);
+	console.log("remaining elements " , theArgs);
+}
+example(1,2,3,4,5);
+output >> first element  1
+output >> remaining elements  [2, 3, 4, 5]
+
+***************************************************************************************
