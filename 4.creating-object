@@ -128,9 +128,16 @@ console.log(bike2.maker);   //Output: Kawasaki
 
 
 ******************************************************************************************************
+6.
+
+creating object without any inherited properties.
+var d = Object.create(null);
+output >> {} 
+//expand object in console , __proto__ property not available
+// __proto__ contains inherited properties from prototype
 
 
-
+******************************************************************************************************
 add singleton pattern too
 2.
 important : 
