@@ -24,3 +24,44 @@ console.log('new',y);
 >> old Honda
 >> new Toyota
 
+**************************************************************************************************
+Anonymous function : 
+functions can also be created by a function expression.
+Such a function can be anonymous; it does not have to have a name.
+
+var square = function(number){return number*number};
+var x = square(4);
+console.log(x);
+output >> 16
+
+************************************************************************************************
+passing function as argument : 
+
+Function expressions are convenient when passing a function as an argument to another function. 
+The following example shows a map function that should receive a function as an argument.
+
+function map(f){
+	for(let i = 0 ; i < 10; i ++){
+    	console.log(f(i));
+	}
+}
+function cube(number){
+	return number * number * number;
+}
+map(cube);	//passing cube function as argument
+
+output >> 
+ 0
+ 1
+ 8
+ 27
+ 64
+ 125
+ 216
+ 343
+ 512
+ 729
+
+**************************************************************************************************
+
+
