@@ -1,0 +1,55 @@
+JavaScript does not have a date data type. 
+However, you can use the Date object and its methods to work with dates and times in your applications
+
+let today = new Date();
+today
+Wed Sep 19 2018 17:49:41 GMT+0530 (India Standard Time)
+
+******************************************************************************************************************************
+
+A string representing a date in the following form: "Month day, year hours:minutes:seconds."
+
+var Xmas95 = new Date("December 25, 1995 13:30:00")
+>> Xmas95
+output : 
+Mon Dec 25 1995 13:30:00 GMT+0530 (India Standard Time)
+
+
+if you miss any one of input data, you will get invalid date
+
+var Xmas96 = new Date("December 25, 1996 30:00");
+>> Xmas96
+output : 
+Invalid Date
+
+**************************************************************************************************
+
+creating date using set of integer values
+
+var Xmas95 = new Date(1995, 11, 25);//year, month, and day. 
+
+output >>
+Mon Dec 25 1995 00:00:00 GMT+0530 (India Standard Time)
+
+***********************************************************************************
+
+A set of integer values for year, month, day, hour, minute, and seconds. 
+For example, var Xmas95 = new Date(1995, 11, 25, 9, 30, 0);.
+
+******************************************************************************
+get time hours and seconds from date
+
+var time = new Date();
+var hour = time.getHours();
+var minute = time.getMinutes();
+var second = time.getSeconds();
+console.log(time);
+console.log(hour);
+console.log(minute);
+console.log(second);
+output >> Wed Sep 19 2018 18:21:55 GMT+0530 (India Standard Time)
+output >> 18
+output >> 21 
+output >> 55
+
+*****************************************************************************
