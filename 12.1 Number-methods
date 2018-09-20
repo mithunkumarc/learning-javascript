@@ -1,0 +1,97 @@
+toString():
+
+let x = 123;
+x.toString();
+"123"
+
+*****************************************************************
+
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+
+
+*****************************************************************
+
+toFixed() : round to next nearest number/decimal
+let y = 9.656;
+y.toFixed(0);
+"10"
+y.toFixed(1);     //rounding to first decimal
+"9.7"
+y.toFixed(2);     //round to second decimal
+"9.66"
+
+*****************************************************************
+
+let z = 9.656;
+z.toPrecision();
+
+"9.656"
+z.toPrecision(2);
+"9.7"
+z.toPrecision(4);
+"9.656"
+z.toPrecision(6);
+"9.65600"
+
+
+*****************************************************************
+toPrecision() : returns a string, with a number written with a specified length:
+
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+
+
+
+************************************************************************
+valueOf() : returns value 
+
+let t = '123';
+x.valueOf();    //return string '123'
+
+let y = 123;
+y.valueOf();    //return Number 123
+
+
+***************************************************************************
+
+parseInt()
+console.log(parseInt('100') * 5);
+ouput :  500
+
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+
+parseFloat()
+console.log(parseFloat('100.5') * 5);
+output : 502.5
+
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+
+***********************************************************************
+
+Number() : method : can be used to convert JavaScript variables to numbers:
+
+Number(true);          // returns 1
+Number(false);         // returns 0
+Number("10");          // returns 10
+Number("  10");        // returns 10
+Number("10  ");        // returns 10
+Number(" 10  ");       // returns 10
+Number("10.33");       // returns 10.33
+Number("10,33");       // returns NaN
+Number("10 33");       // returns NaN 
+Number("John");        // returns NaN
+
+*************************************************************************
