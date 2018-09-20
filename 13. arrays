@@ -181,5 +181,33 @@ sort();
 
 
 ********************************************************************************************************************
+indexOf() : searches the array for searchElement and returns the index of the first match.
+
+
+var a = ['a', 'b', 'a', 'b', 'a'];
+console.log(a.indexOf('b')); // output :  1
+
+// Now try again, starting from after the last match
+console.log(a.indexOf('b', 2)); // output :  3, skips index 1(first 'b')
+
+console.log(a.indexOf('z')); // logs -1, because 'z' was not found
+
+
+********************************************************************************************************************
+
+lastIndexOf(searchElement[, fromIndex]) works like indexOf, but starts at the end and searches backwards.
+
+var a = ['a', 'b', 'c', 'd', 'a', 'b'];
+console.log(a.lastIndexOf('b')); // logs 5
+
+// Now try again, starting from before the last match
+console.log(a.lastIndexOf('b', 4)); // logs 1 , skips 'b' which is at index 5
+
+console.log(a.lastIndexOf('z')); // logs -1
+
+
+********************************************************************************************************************
+refer : Arrow functions
+
 
 ********************************************************************************************************************
