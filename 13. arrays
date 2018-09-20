@@ -21,5 +21,165 @@ arr.length
 var arr1 = [];
 arr1.length = 5;
 
-************************************************************************************************
 
+* Note : array.length is same as array['length']
+
+******************************************************************************************************
+
+arrays can also be assigned as a property of a new or an existing object:
+ 
+ var phonebook = {contacts : ['raghu','ravi','raman']};
+phonebook.contacts
+>>> ["raghu", "ravi", "raman"]
+
+********************************************************************************************************
+
+You can populate an array by assigning values to its elements. For example,
+
+var emp = [];
+emp[0] = 'casey jones';
+emp[1] = 'phil Lesh';
+emp[2] = 'August West';
+
+>>> emp
+>>> ["casey jones", "phil Lesh", "August West"]
+
+
+*****************************************************************************************************
+
+creating an object which represents array
+var pen = [];
+pen[1.2] = 'cello';
+pen[2.2] = 'reynolds';
+
+for(let p in pen){
+	console.log(p);
+}
+
+for(let p in pen){
+	console.log(pen[p]);
+}
+>>> cello
+>>> reynolds
+
+* size of this object is zero , i.e pen.length is zero
+
+***********************************************************************************************************
+
+forEach() function : 
+let coin = ['one','two','five','ten'];
+coins.forEach(c => console.log(c));
+>> one
+>> two
+>> five
+>> ten
+
+************************************************************************************************************
+
+Array methods 
+
+1.concat() 
+
+let newarray = [1,2,3].concat([4,5,6])
+>>> newarray
+>>> [1, 2, 3, 4, 5, 6]
+
+**************************************************************************************************************
+
+joint(delimeter) : joins all elements of an array into a string.
+
+
+let five = new Array('wind','air','space','earth','water');
+let result = five.join('-');
+result
+"wind-air-space-earth-water"
+
+
+**************************************************************************************************************
+
+push(elementToBeAdded) : adds one or more elements to the end of an array and returns the resulting length of the array.
+
+let bag = new Array('pen','book');
+bag.push('mobile','ball');       
+>>> bag
+>>> ["pen", "book", "mobile","ball"]
+
+********************************************************************************************************************
+pop() removes the last element from an array and returns that element.
+
+
+>>> bag
+>>> ["pen", "book", "mobile", "pin", "clip"]
+
+>>> bag.pop();
+>>> bag
+>>> ["pen", "book", "mobile", "pin"]
+
+********************************************************************************************************************
+shift() removes the first element from an array and returns that element.
+
+>>> bag
+>>> ["pen", "book", "mobile", "pin"]
+>>> bag.shift();
+>>> bag
+>>> ["book", "mobile", "pin"]
+
+
+********************************************************************************************************************
+
+unshift() adds one or more elements to the front of an array and returns the new length of the array.
+
+>>> bag
+>>> ["book", "mobile", "pin"]
+>>> bag.unshift("goggles","bottle");
+>>> bag
+>>> ["goggles", "bottle", "book", "mobile", "pin"]
+
+********************************************************************************************************************
+
+ slice(startIndex, indexOfLastElement+1) : extracts a section of an array and returns a new array.
+ 
+bag
+(5) ["goggles", "bottle", "book", "mobile", "pin"]
+let mini_bag = bag.slice(1,3);
+mini_bag
+(2) ["bottle", "book"]
+
+*Note : no change in original array
+********************************************************************************************************************
+
+splice() : 
+splice(start_index, count_to_remove, addElement1, addElement2, ...) 
+removes elements from an array and (optionally) replaces them. It returns the items which were removed from the array.
+
+>>> bag
+>>> ["goggles", "bottle", "book", "mobile", "pin"]
+>>> bag.splice(1,3,"pen","eraser","whitener");
+>>> bag
+>>> ["goggles", "pen", "eraser", "whitener", "pin"]
+
+
+*******************************************************************************************************************
+
+reverse()
+
+>>> bag
+>>> ["goggles", "pen", "eraser", "whitener", "pin"]
+>>> bag.reverse();
+>>> bag
+>>> ["pin", "whitener", "eraser", "pen", "goggles"]
+
+
+********************************************************************************************************************
+sort();
+
+>>> bag
+>>> ["pin", "whitener", "eraser", "pen", "goggles"]
+>>> bag.sort();
+>>> bag
+>>> ["eraser", "goggles", "pen", "pin", "whitener"]
+
+
+********************************************************************************************************************
+
+********************************************************************************************************************
