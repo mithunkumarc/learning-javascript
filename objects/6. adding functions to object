@@ -33,6 +33,11 @@ p.print_hello();
 
 
 
+*************************************************************************************************************
+deleting property from object : 
 
+var play = {name:'one day',director:'vijay'};
+delete play.name;
+play >>> {director: "vijay"}
 
 
