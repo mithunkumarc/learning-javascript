@@ -122,3 +122,23 @@ output >> first element  1
 output >> remaining elements  [2, 3, 4, 5]
 
 ***************************************************************************************
+
+
+construction function : all functions will have prototype object
+
+
+function run(){}
+>>> typeof run.prototype
+>>> "object"
+
+
+prototype is an object this object makes all the properties inherit from constructor funtion to objects.
+
+NOte :
+
+__proto__ (resides as an internal property of an object)
+ is the actual object that is used in the lookup chain to resolve methods, etc. 
+
+
+prototype (constructor functions by default get prototype object)
+is the object that is used to build __proto__ when you create an object with new
