@@ -1,0 +1,26 @@
+Promise has two channels: the first for results, the second for potential errors. 
+To get the result, you provide the callback function as the ‘then’ function parameter. 
+To handle errors, you provide the callback function as the ‘catch’ function parameter.
+
+Example 1 :
+var promise1 = new Promise(function(resolve, reject) {
+  reject("error bud");		//replaceable with---> throw ‘error bud’
+});
+
+promise1.catch(function(error) {
+  console.log(error);
+});
+
+Output : error bud
+
+Example 2 : 
+var promise1 = new Promise(function(resolve, reject) {
+  resolve("success bud!!");
+});
+
+promise1.then(function(message){
+ console.log(message);
+});
+
+
+Note :  promises are used for  Asynchronous operations
