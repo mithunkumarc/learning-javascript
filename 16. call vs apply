@@ -1,0 +1,21 @@
+Javascript call vs apply
+var person1 = {name : "rajat",age : 25, city : "bengaluru"};
+var person2 = {name : "anila", age : 24, city : "belgaum"};
+		
+var sayAnotherHello = function(first,second){
+	alert("hai "+this.name+","+ first +","+second);
+	}
+
+
+
+
+sayAnotherHello.call(person1, "tu rail si", " guzarti hai");	
+sayAnotherHello.apply(person2,["dinga","binga"]);   
+
+
+Note:
+
+The difference is that apply lets you invoke the function with arguments as an array; 
+call requires the parameters be listed explicitly. 
+
+first parameter is the context object. remaining are parameter values
