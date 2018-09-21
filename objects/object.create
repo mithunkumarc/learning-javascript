@@ -1,0 +1,37 @@
+object can be created using constructor function. the other way to create object is by using Object.create()
+
+************************************************************************************************************
+Objects can also be created using the Object.create() method. 
+This method can be very useful, 
+because it allows you to choose the prototype object for the object you want to create, 
+without having to define a constructor function.
+
+
+// Animal properties and method encapsulation
+var Animal = {
+  type: 'Invertebrates', // Default value of properties
+  displayType: function() {  // Method which will display type of Animal
+    console.log(this.type);
+  }
+};
+
+// Create new animal type called animal1 
+var animal1 = Object.create(Animal);        //animal1 inherit prperties from Animal, see __proto__
+animal1.displayType(); // Output:Invertebrates
+
+
+Animal object is the prototype of animal1
+
+****************************************************************************************************************
+//test by using isPrototypeOf();
+
+Animal.isPrototypeOf(animal1);
+true
+
+*****************************************************************************************************************
+Note : 1
+var animal1 = Object.create(Animal);        //animal1 inherit prperties from Animal, see __proto__
+var animal2 = Object.create(null);          //animal2 becomes an object without any inheriting propertis, not __proto__ property
+
+Note :2 
+__proto__ is an internal property
