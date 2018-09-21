@@ -1,0 +1,129 @@
+JavaScript is designed on a simple object-based paradigm. 
+An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+A property's value can be a function, in which case the property is known as a method. 
+
+
+ways to create properties for object : 
+
+var myCar = new Object();
+myCar.make = 'Ford';                    //referenceVariable.propertyName
+myCar['model'] = 'Mustang';             //referenceVariable['propertyName']
+myCar.year = 1969;          
+myCar.color;	//undefined               //not included in properties list
+myCar['manufacture unit'] = 'noida';    //key with space, if key has two words, use quotes
+
+>>> myCar
+>>> {make: "Ford", model: "Mustang", year: 1969, manufacture unit: "noida"}
+
+
+**************************************************************************************************************
+enumerating properties : 
+
+>>> myCar
+>>> {make: "Ford", model: "Mustang", year: 1969, manufacture unit: "noida"}
+
+//enumerating only keys
+
+for (let property in myCar){
+	console.log(property);
+}
+>>> make
+>>> model
+>>> year
+>>> manufacture unit
+
+//enumerating only values
+for (let property in myCar){
+	console.log(myCar[property]);
+}
+>>> Ford
+>>> Mustang
+>>> 1969
+>>> noida
+
+//other ways to enumerate 
+
+Object.getOwnPropertyNames(myCar);
+(4) ["make", "model", "year", "manufacture unit"]
+
+Object.keys(myCar);
+(4) ["make", "model", "year", "manufacture unit"]
+
+****************************************************************************************************
+
+hasOwnProperty() : 
+returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
+
+>>>> myCar
+>>> {make: "Ford", model: "Mustang", year: 1969, manufacture unit: "noida"}
+>>> myCar.hasOwnProperty('make');
+>>> true  //make belongs to Car ojbect
+
+>>> myCar.hasOwnProperty('toString');
+>>> false       //toString is an inherited property from Object
+
+
+***********************************************************************************
+
+creating obje using {}
+
+let pen = {
+	name : 'cello',
+	cost : 23,
+	write : function(){
+				console.log('writing...');
+			}
+}
+
+>>> pen
+>>> {name: "cello", cost: 23, write: ƒ}
+
+***************************************************************************************
+
+using constructor function to create object 
+
+function Pen(name,cost){
+	this.name = name;
+	this.cost = cost;
+	this.write = function(){console.log('write');}
+}
+
+let heropen = new Pen('hero',50);
+>>> heropen
+>>> Pen {name: "hero", cost: 50, write: ƒ}
+
+
+*********************************************************************************************
+
+object as a property of another object 
+
+creating car object which has owner object as proprety
+
+
+function Person(name, age, sex) {
+  this.name = name;
+  this.age = age
+}
+
+var rand = new Person('Rand McKinnon', 33);
+
+function Car(make, model, year, owner) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.owner = owner;
+}
+
+
+var car1 = new Car('Eagle', 'Talon TSi', 1993, rand);
+
+
+
+>>>>
+console.log(car1['owner']['name']);
+>>> Rand McKinnon
+
+console.log(car1.owner.age);
+>>> 33
+
+*********************************************************************************************
