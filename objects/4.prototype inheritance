@@ -1,0 +1,31 @@
+each object has an internal property called __proto__
+__proto__ contains inherited properties from prototype.
+
+creating animal constructor which also acts as prototype for objects which are created from animal
+function animal(name,age){
+	this.name = name;
+	this.age = age;
+}
+
+let dog = new animal('dog',2);     //dog will get properties from animal constructor function/prototype, and __proto__ from Object
+>>> dog
+
+let cat = new animal('cat',1);
+
+
+if you want to add new propterty to dog and cat, add new property to prototype , this property will reflect in all objects
+which are created from animal constructor function.
+
+animal.prototype.color = 'white';
+
+check dog and cat , you will find color property in __proto__ internal property
+
+dog.color 
+>>> white
+
+cat.color
+>>> white
+
+
+
+
