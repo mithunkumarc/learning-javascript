@@ -63,5 +63,22 @@ output >> rajat
 
 
 
+******************************************************************************************
 
+set get in object as properties, Note : comma between two set and get
+
+
+
+var theater = {
+	set movie(movie_name){
+    		this.movie_name = movie_name;
+	},	
+	get movie(){
+		return this.movie_name;
+	}
+}
+theater.movie = 'paramanu';
+"paramanu"
+theater.movie
+"paramanu"
 
