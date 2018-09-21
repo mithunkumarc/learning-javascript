@@ -41,9 +41,25 @@ let t1 = new table(100);
 
 set and get methods
 
+1.set and get function name is same
+2.note that propertyname is different with set and get function name
+3.keep set get and propertyname with different names to avoid conflicts
 
+class Student{
+	
+	set name(studentname){						
+    	this.studentname = studentname;
+	}
+	
+	get name(){
+    	return this.studentname;
+	}
+}
 
-
+let student = new Student();	
+student.name = "rajat";			//assigning property with set function
+console.log(student.name);		//get value of property using get function
+output >> rajat
 
 
 
