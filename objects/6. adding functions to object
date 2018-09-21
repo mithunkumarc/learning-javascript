@@ -1,0 +1,38 @@
+use prototype to add function to all objects.
+
+function person(name){
+	this.name = name;
+}
+person.prototype.print_name = function(){
+	console.log(this.name);
+}
+
+ƒ (){
+	console.log(this.name);
+}
+let p = new person('raj');
+p.print_name();
+>>> raj
+
+let m = new person('sri');
+m.print_name();
+>>> sri
+
+*********************************************************************************************************
+
+adding funtion to individual object
+
+p =  {name: "raj"}
+
+p.print_hello = function(){
+	console.log('hi '+this.name);
+}
+
+p.print_hello();
+>>> hi raj
+
+
+
+
+
+
