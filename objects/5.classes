@@ -1,0 +1,51 @@
+added in ES2015 
+
+class Mobile{
+	constructor(number){
+		this.number = number;
+	}
+}
+let m = new Mobile(5);
+m
+Mobile {number: 5}
+
+*******************************************************************************************
+
+
+class furniture{
+	constructor(price){
+		this.price = price;
+	}
+}
+
+class table extends furniture{
+	constructor(price){
+    	super(price);                 //must call super constructor in derived class
+	}
+	
+	bill(tax){
+		return this.price + tax;        //use this to refer instance variables
+	}
+}
+
+let t1 = new table(100);
+
+>>> t1
+>>> table {price: 100}
+>>> t1.bill(10);
+>>> 110
+>>> t1.price
+>>> 100
+
+*****************************************************************************************
+
+set and get methods
+
+
+
+
+
+
+
+
+
