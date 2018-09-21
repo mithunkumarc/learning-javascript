@@ -1,0 +1,29 @@
+adding function to object using prototype
+
+function Graph() {
+  this.vertices = [];
+  this.edges = [];
+}
+
+Graph.prototype = {
+  addVertex: function(v) {
+    this.vertices.push(v);
+  }
+};
+
+var g = new Graph();
+g.addVertex(10);
+g.vertices
+[10]
+
+
+*************************************************************************************
+NOTE :PROTOTYPE part of funtion
+NOTE : __PROTO__ part of object
+
+**************************************************************************************
+usual way to declare function in constructor function
+
+function fun(){
+  this.print = function(){console.log('hello');};
+}
