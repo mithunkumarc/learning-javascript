@@ -142,3 +142,23 @@ __proto__ (resides as an internal property of an object)
 
 prototype (constructor functions by default get prototype object)
 is the object that is used to build __proto__ when you create an object with new
+
+
+
+
+**************************************************************************************************
+this keyword cannot be accessed in nested functions 
+
+var employee = {
+    id:1,
+    greet:function(){
+   	 setTimeout(function(){console.log(this.id)}, 1000);
+    }
+};
+console.log(employee.greet());
+
+//undefined
+
+//this keyword works in property funtion (greet()) but not in nested function (setTimeout)
+
+**************************************************************************************
