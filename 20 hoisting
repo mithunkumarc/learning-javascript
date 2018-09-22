@@ -1,0 +1,22 @@
+hoisting : In other words; a variable can be used before it has been declared.
+
+
+'use strict';
+x = 10;
+var x;
+>>> 10
+
+
+Variables and constants declared with let or const are not hoisted!
+
+'use strict';
+y = 10;
+let y;
+>>> Uncaught ReferenceError: y is not defined
+
+
+
+'use strict''
+z = 10;
+const z;
+>>> Uncaught SyntaxError: Invalid or unexpected token
