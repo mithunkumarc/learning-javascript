@@ -1,3 +1,14 @@
+1.usually object created from constructor function.
+2.javascript creates a prototype object for every constructor function.
+3.all the objector created using constructor function becomes subclass of constructor function's prototype object
+4.all the other objects becomes subclass of Object.prototype except objects which are created like Object.create(null);
+
+object.create(null); no parent object with no inherited properties.
+
+
+*****************************************************************************************
+ways to create object : 
+
 1.using object() constructor, creates an empty object
 
 let person = new Object();
