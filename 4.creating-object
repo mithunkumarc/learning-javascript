@@ -1,9 +1,16 @@
+constructor function --> function.prototype object --> all the objects created using constructor function
+
 1.usually object created from constructor function.
 2.javascript creates a prototype object for every constructor function.
-3.all the objector created using constructor function becomes subclass of constructor function's prototype object
+3.all the objects created using constructor function becomes subclass of constructor function's prototype object
 4.all the other objects becomes subclass of Object.prototype except objects which are created like Object.create(null);
 
 object.create(null); no parent object with no inherited properties.
+
+__proto__ is an internal property of all objects (excepts Object.create(null)). it consists of inherited properties.
+
+if you want to add new property to constructor function , add it to prototype it will reflect in all child objects.
+
 
 
 *****************************************************************************************
