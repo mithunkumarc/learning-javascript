@@ -1,0 +1,67 @@
+The "use strict"(as string) directive was new in ECMAScript version 5.
+
+It is not a statement, but a literal expression, ignored by earlier versions of JavaScript.
+
+The purpose of "use strict" is to indicate that the code should be executed in "strict mode".
+
+With strict mode, you can not, for example, use undeclared variables.
+
+All modern browsers support "use strict" except Internet Explorer 9 and lower:
+
+
+You can use strict mode in all your programs. It helps you to write cleaner code, like preventing you from using undeclared variables.
+
+
+
+
+'use strict';
+r = 123;    //undeclared variable behave like global variable , to avoid this use strict mode
+VM213:2 Uncaught ReferenceError: r is not defined
+
+Eg without using strict mode
+
+function washCloth(){
+	detergent = 'surf';
+}
+washCloth();
+console.log(detergent);   //detergent accessible outside washCloth function
+>>> surf
+
+
+_________________________________________________________________________________________________
+
+applying static keyword for mehthod
+
+class MyClass{
+	static static_method(){
+    	return 'this is a message';
+	}
+}
+MyClass.static_method();
+"this is a message"
+
+
+___________________________________________________________________________________________________-
+
+static get set method
+
+class Circle{
+	static set pi(pi_value){
+    	Circle.pi_value = pi_value;
+	}
+	static get pi(){
+    	return Circle.pi_value;
+	}
+}
+Circle.pi = 3.14;
+console.log(Circle.pi);
+>>> 3.14
+
+** Note : use classname directly to access static property 
+
+
+
+
+
+
+
