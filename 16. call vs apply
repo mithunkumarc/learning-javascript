@@ -19,3 +19,34 @@ The difference is that apply lets you invoke the function with arguments as an a
 call requires the parameters be listed explicitly. 
 
 first parameter is the context object. remaining are parameter values
+
+
+********************************************************************************************************
+call vs apply
+
+
+1.call
+function watch(serial1, serial2){
+	console.log(this.tv , serial1, serial2);
+}
+function Home(tv){
+	this.tv = tv;
+}
+let home = new Home('samsung');
+watch.call(home, 'doremon', 'little singham');
+>>> samsung doremon little singham
+
+
+
+2.apply
+
+function watch(serial1, serial2){
+	console.log(this.tv , serial1, serial2);
+}
+function Home(tv){
+	this.tv = tv;
+}
+let home = new Home('samsung');
+watch.apply(home,['doremon', 'little singham']);
+>>> samsung doremon little singham
+
