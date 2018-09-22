@@ -1,0 +1,93 @@
+Type coercion(Type casting) is the process of converting value from one type to another 
+(such as string to number, object to boolean, and so on)
+
+
+Boolean(1);     //number to boolean
+true
+
+String(123);    //number to string
+"123"
+
+Number('345') + 4     //string to number
+349
+
+
+
+Implicit vs. explicit coercion
+When a developer expresses the intention to convert between types by writing the appropriate code, like 
+Number(value), String('value') and Boolean('value') 
+it’s called explicit type coercion (or type casting).
+
+
+Since JavaScript is a weakly-typed language, values can also be converted between different types automatically, 
+and it is called implicit type coercion. It usually happens when you apply operators to values of different types, like
+1 == null, 2/’5', null + new Date()
+
+
+Three types of conversion
+The first rule to know is there are only three types of conversion in JavaScript:
+
+to string
+to boolean
+to number
+
+
+String conversion
+To explicitly convert values to a string apply the String() function. Implicit coercion is triggered by the binary + operator, when any operand is a string:
+
+String(123) // explicit
+123 + ''    // implicit
+
+String(123)                   // '123'
+String(-12.3)                 // '-12.3'
+String(null)                  // 'null'
+String(undefined)             // 'undefined'
+String(true)                  // 'true'
+String(false)                 // 'false'
+
+
+Boolean conversion
+To explicitly convert a value to a boolean apply the Boolean() function.
+Implicit conversion happens in logical context, or is triggered by logical operators ( || && !) .
+
+Boolean(2)          // explicit
+if (2) { ... }      // implicit due to logical context
+!!2                 // implicit due to logical operator
+2 || 'hello'        // implicit due to logical operator
+
+Boolean('')           // false
+Boolean(0)            // false     
+Boolean(-0)           // false
+Boolean(NaN)          // false
+Boolean(null)         // false
+Boolean(undefined)    // false
+Boolean(false)        // false
+
+
+Numeric conversion
+
+Number('123')   // explicit
++'123'          // implicit
+123 != '456'    // implicit
+4 > '5'         // implicit
+5/null          // implicit
+true | 0        // implicit
+
+Note : 
+You can override the default toString() and valueOf() methods to hook into object-to-primitive conversion logic.
+
+
+var obj = {
+  prop: 101,
+  toString(){
+    return 'Prop: ' + this.prop;
+  },
+  valueOf() {
+    return this.prop;
+  }
+};
+
+console.log(String(obj));  // 'Prop: 101'
+console.log(obj + '')      // '101'
+console.log(+obj);         //  101
+console.log(obj > 100);    //  true
