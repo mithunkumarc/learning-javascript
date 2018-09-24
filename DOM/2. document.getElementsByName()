@@ -2,6 +2,8 @@ The document.getElementsByName() method returns all the element of specified nam
 
 name can be attribute of a tag.
 
+Ex: counting number of elements having attribute called name
+
 <!DOCTYPE html>
 <html>
 <head>
