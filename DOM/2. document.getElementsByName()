@@ -1,0 +1,32 @@
+The document.getElementsByName() method returns all the element of specified name.
+
+name can be attribute of a tag.
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>display the number of elements with a specific name</title>
+</head>
+<body>
+	<p>
+		Cats: <input name ='x'
+		type='radio' value='Cats'>
+		Dogs : <input name="x" 
+		type="radio" value='Dogs'>
+	</p>
+
+	<p>
+		<input type='button'
+		onclick="getElements()"
+		value="How many elements named x?"
+		>
+	</p>
+	<p id="demo"></p>
+<script type="text/javascript">
+	function getElements(){
+		let x = document.getElementsByName('x');
+		document.getElementById('demo').innerHTML = x.length;
+	}
+</script>
+</body>
+</html>
