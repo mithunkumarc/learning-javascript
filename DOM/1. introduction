@@ -46,4 +46,31 @@ document.replaceChild(element) 	  Replace an HTML element
 document.write(text) 	            Write into the HTML output stream
 
 
-4.
+4. Event handling : 
+document.getElementById(id).onclick = function(){code} 	Adding event handler code to an onclick event
+
+5. List of DOM objects 
+
+document.anchors 	            Returns all <a> elements that have a name attribute 	
+document.baseURI 	            Returns the absolute base URI of the document 	
+document.body 	                Returns the <body> element
+document.cookie 	            Returns the document's cookie 	
+document.doctype 	            Returns the document's doctype 	
+document.documentElement 	    Returns the <html> element 	
+document.documentMode 	        Returns the mode used by the browser 	
+document.documentURI 	        Returns the URI of the document 	
+document.domain 	            Returns the domain name of the document server 	
+document.embeds 	            Returns all <embed> elements 	
+document.forms 	                Returns all <form> elements 	
+document.head 	                Returns the <head> element 	
+document.images 	            Returns all <img> elements 	
+document.implementation 	    Returns the DOM implementation 	
+document.inputEncoding 	        Returns the document's encoding (character set) 	
+document.lastModified 	        Returns the date and time the document was updated 	
+document.links 	                Returns all <area> and <a> elements that have a href attribute 	
+document.readyState 	        Returns the (loading) status of the document 	
+document.referrer 	            Returns the URI of the referrer (the linking document) 	
+document.scripts 	            Returns all <script> elements 	
+document.strictErrorChecking 	Returns if error checking is enforced 	
+document.title 	                Returns the <title> element 	
+document.URL 	                Returns the complete URL of the document 
