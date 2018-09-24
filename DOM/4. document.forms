@@ -1,0 +1,38 @@
+document.forms : 
+
+
+The forms read-only property of the Document interface returns an HTMLCollection listing all the 
+<form> elements contained in the document.
+
+1. eg : counting number of forms tag
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+</head>
+<body>
+<form action="javascript:void(0)">  //javascript:void(0) stops action
+	<input type="text" name="fname" placeholder="enter your first name"><br>
+	<input type="text" name='lname' placeholder="enter your last name"><br>
+	<input type ="submit" value="submit" onclick="myfunction()"><br>
+	<p id ='demo'></p>
+</form>
+<script type="text/javascript">
+	function myfunction(){
+		document.getElementById('demo').innerHTML = document.forms.length;
+	}
+</script>
+</body>
+</html>
+
+
+
+2. eg  : reading first input element value : replace myfunction
+
+<script type="text/javascript">
+	function myfunction(){
+		document.getElementById('demo').innerHTML 
+		= document.forms[0].elements.fname.placeholder +' : '+ document.forms[0].elements.fname.value;
+	}
+  </script>
