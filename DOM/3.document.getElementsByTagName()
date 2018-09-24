@@ -1,1 +1,33 @@
+The getElementsByTagName() method returns a collection of all elements in the document with the specified tag name, 
+as a NodeList object.
+
+example : counting number of anchor tags
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>anchor tag</title>
+</head>
+<body>
+	<a name="html">HTML Tutorial</a><br>
+	<a name="CSS">CSS Tutorial</a><br>
+	<a name="xml">XML Tutorial</a>
+
+	<p id="demo"></p>
+
+	<button onclick="myfunction()">submit</button>
+	<script>
+		function myfunction(){			
+			document.getElementById('demo').innerHTML = document.getElementsByTagName('a').length;
+      // use index to access individual tag, [check length before]
+			// document.getElementById('demo').innerHTML = document.getElementsByTagName('a')[0].innerHTML;      
+      console.log(document.anchors.length);
+		}		
+	</script>
+</body>
+</html>
+
+
+
 
