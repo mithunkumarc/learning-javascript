@@ -24,7 +24,7 @@
 <p id='columns'></p>
 <br>
 <p id='first_cell_value'></p>
-<button onclick="deleterow('mytable')">count rows</button>
+<button onclick="deleterow('mytable')">delete rows</button>
 <script type="text/javascript">
 	function deleterow(table){	
 		let mytableElement = document.getElementById('mytable');	
