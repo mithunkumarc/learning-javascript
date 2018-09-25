@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table count rows columns</title>
+</head>
+<body>
+<table id='mytable' style="border: 1px solid black">
+	<tr>
+		<th>one</th>
+		<th>two</th>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>300</td>
+		<td>400</td>
+	</tr>
+</table>
+<br>
+<p id='rows'></p>
+<br>
+<p id='columns'></p>
+<br>
+<p id='first_cell_value'></p>
+<button onclick="count('mytable')">count rows</button>
+<script type="text/javascript">
+	function count(table){		
+		document.getElementById('rows').innerHTML =  
+		'number of rows ' + document.getElementById(table).rows.length;
+		document.getElementById('columns').innerHTML =  
+		'number of cells in each row '+ document.getElementById(table).rows[0].cells.length;
+		document.getElementById('first_cell_value').innerHTML = 
+		'the value in first cell in second row is '+ document.getElementById(table).rows[1].cells[0].innerHTML;
+	}
+</script>
+</body>
+</html>
