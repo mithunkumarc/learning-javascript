@@ -1,0 +1,21 @@
+style.backgroundColor : background color of an element
+
+eg: changing background color of html body
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>changing background color</title>
+</head>
+<body>
+<button onclick="change_color('green')">green</button>
+<br>
+<button onclick="change_color('red')">red</button>
+
+<script type="text/javascript">
+	function change_color(color){
+		document.body.style.backgroundColor = color;	
+	}	
+</script>
+</body>
+</html>
