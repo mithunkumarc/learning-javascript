@@ -11,7 +11,7 @@ find button using id and tagname
 <script type="text/javascript">
 	function myfunction(){
 		alert(document.getElementById('main'));
-		alert(document.getElementsByTagName('button')[0].innerHTML);
+		alert(document.getElementsByTagName('button')[0].innerHTML);		
 	}
 </script>
 </body>
