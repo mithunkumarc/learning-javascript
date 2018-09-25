@@ -1,0 +1,18 @@
+find button using id and tagname
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+</head>
+<body>
+	<button id = 'main' onclick="myfunction()">clicker</button>
+<script type="text/javascript">
+	function myfunction(){
+		alert(document.getElementById('main'));
+		alert(document.getElementsByTagName('button')[0].innerHTML);
+	}
+</script>
+</body>
+</html>
