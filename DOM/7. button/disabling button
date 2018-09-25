@@ -1,0 +1,17 @@
+disabling button using id, can be done with TagName[postion] 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+</head>
+<body>
+	<p>button gets disabled onclick</p>
+	<button id = 'main' onclick="myfunction()">clicker</button>
+<script type="text/javascript">
+	function myfunction(){
+		document.getElementById('main').disabled = true;
+	}
+</script>
+</body>
+</html>
