@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table border</title>
+</head>
+<body>
+<table id='mytable' style="border: 1px solid black">
+	<tr>
+		<th>one</th>
+		<th>two</th>
+	</tr>
+	<tr>
+		<td>100</td>
+		<td>200</td>
+	</tr>
+	<tr>
+		<td>300</td>
+		<td>400</td>
+	</tr>
+</table>
+<br>
+<button onclick="changeborder('mytable')">change border</button>
+<script type="text/javascript">
+	function changeborder(table){		
+		document.getElementById(table).style.border = '5px solid';
+		document.getElementById(table).style.padding = '25px';
+	}
+</script>
+</body>
+</html>
