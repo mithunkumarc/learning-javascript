@@ -1,0 +1,48 @@
+reading values from form tag
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+</head>
+<body>
+	<form id='frm1' action='javascript:void(0)'>
+		First name: <input type='text' name='fname'><br>
+		Last name: <input type='text' name='lname'><br>
+		password: <input type='password' name='password'><br>
+		checkbox: <input type='checkbox' name='c_option' value="accpeted"><br>
+		<select name='cars'>
+			<option disabled="disabled">select brand</option>
+			<option value='volvo'>Volvo</option>
+			<option value='benz'>Benz</option>
+			<option value='bmw'>BMW</option>
+			<option value='toyota'>Toyota</option>
+		</select>		
+		<input type='button' onclick="myfunction()" value="submit">
+		<input id='clear' type='button' onclick="clearvalues()" value='reset'>
+	</form>
+
+	<p id='f_name'></p>
+	<p id='l_name'></p>
+	<p id='u_password'></p>
+	<p id='u_checkbox'></p>
+	<p id='u_cars'></p>
+
+	<script>
+		function myfunction () {
+			//first way using form id
+			document.getElementById('f_name').innerHTML =document.getElementById('frm1').fname.value;
+			//second way using form index, if page consists of multiple forms tag
+			document.getElementById('l_name').innerHTML = document.forms[0].lname.value;
+			document.getElementById('u_password').innerHTML = document.forms[0].password.value;
+			//checkbox : whether checked or not
+			document.getElementById('u_checkbox').innerHTML = document.forms[0].c_option.checked;
+			document.getElementById('u_cars').innerHTML = document.forms[0].cars.value;
+		}
+		function clearvalues(){
+			document.getElementById('frm1').reset();			
+		}
+	</script>
+</body>
+</html>
