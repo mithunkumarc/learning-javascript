@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>table count rows columns</title>
+	<title>deleting rows</title>
 </head>
 <body>
 <table id='mytable' style="border: 1px solid black">
