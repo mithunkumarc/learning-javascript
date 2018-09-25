@@ -19,6 +19,7 @@
 	</tr>
 </table>
 <br>
+//table id is sending as parameter
 <button onclick="changeborder('mytable')">change border</button>
 <script type="text/javascript">
 	function changeborder(table){		
