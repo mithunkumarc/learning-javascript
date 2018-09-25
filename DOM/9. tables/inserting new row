@@ -24,7 +24,7 @@
 <p id='columns'></p>
 <br>
 <p id='first_cell_value'></p>
-<button onclick="insert_row('mytable')">count rows</button>
+<button onclick="insert_row('mytable')">insert rows</button>
 <script type="text/javascript">
 	function insert_row(table){	
 		let mytableElement = document.getElementById('mytable');	
