@@ -1,0 +1,18 @@
+let obj = {name:"karan", age:25};
+{name: "karan", age: 25}
+
+delete obj.name
+true
+
+
+delete obj.age
+true
+
+//cannot delete object
+delete obj
+false
+
+//add property
+obj.address = 'bengaluru';
+>>> obj
+>>> {address: "bengaluru"}
