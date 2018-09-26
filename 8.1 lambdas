@@ -1,0 +1,28 @@
+
+let add = (x,y) => x+y;
+console.log(add(3,4));
+output : 7
+
+
+**********************************************
+
+let even = x => x%2 == 0;
+let numbers = [1,2,3,4,5,6,7,8];
+console.log(numbers.filter(even));
+
+output : [2, 4, 6, 8]
+
+
+**********************************************
+
+let numbers = [1,2,3,4,5,6,7,8];
+let multiplyby5 = x => x * 5;
+console.log(numbers.map(multiplyby5));
+output :  [5, 10, 15, 20, 25, 30, 35, 40]
+
+**********************************************
+let numbers = [1,2,3,4,5,6,7,8];
+let sum = (x,y) => x+y;
+console.log(numbers.reduce(sum));
+
+output : 36
