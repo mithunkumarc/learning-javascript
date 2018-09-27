@@ -173,5 +173,12 @@ declaring calling function at the same time :
 
 output : 30
 
-cannot be reused again
+cannot be reused again , you can skip the name 
+
+
+(function (x,y){
+	console.log(x+y);
+})(10,20)
+
+output >> 30
 *******************************************************************************************
