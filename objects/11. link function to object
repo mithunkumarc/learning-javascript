@@ -1,0 +1,30 @@
+var car = {
+	value : 'toyota'
+}
+
+var fuel = {
+	value : 'petrol'
+}
+
+var display = function(){
+	console.log(this.value);
+}
+
+car.display = display;
+fuel.display = display;
+
+car.display();
+fuel.display();
+
+output : toyota
+output : petrol
+
+
+//car , fuel obj pointed to display function which is defined outside
+display.createdAt = Date.now()
+1538035657284
+car.display.createdAt
+1538035657284
+
+
+time says that both obj has a reference which points to display function which exists outside
