@@ -163,7 +163,7 @@ console.log(employee.greet());
 
 **************************************************************************************
 
-
+immediately invoked function expressions
 
 declaring calling function at the same time : 
 
@@ -172,4 +172,6 @@ declaring calling function at the same time :
 })(10,20)
 
 output : 30
+
+cannot be reused again
 *******************************************************************************************
