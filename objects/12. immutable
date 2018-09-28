@@ -1,0 +1,72 @@
+seal vs freeze
+
+seal : 
+    It prevents adding and/or removing properties from the sealed object, but modify the value of property
+    
+    Can throw a TypeError when attempting to modify (in strict mode)
+    
+    Using delete will return false
+    
+    It makes every property non-configurable, and they cannot be converted from data accessors to properties (and vice versa)
+
+    >>> var obj = Object.seal({x:2,y:3});
+    >>> obj
+    >>> {x: 2, y: 3}
+    
+    //cannot be deleted
+    >>> delete obj.x
+        false
+    
+    
+    >>> obj.z = 5
+        5
+  
+    >>>  obj
+        {x: 2, y: 3}  //z not added to object
+        
+    >>> obj.x = 99
+        99
+       
+    >>> obj
+        {x: 99, y: 3}   //value of x changed from 2 to 99
+       
+       
+    >>> 'use strict'    //under strict mode , adding new property will throw error
+        obj.t = 33
+        VM296:2 Uncaught TypeError: Cannot add property
+        
+        
+        ***********************************************************************************************************
+        
+        freeze() : 
+        
+        Exactly what Object.seal does, plus:
+        It prevents changing any existing properties
+        
+        var obj = Object.freeze({x:2,y:3});
+        >>> obj
+        >>> {x: 2, y: 3}
+      
+        //cannot delete property
+        >>> delete obj.x
+        >>> false
+        
+        //cannot add new property
+        >>> obj.z = 4
+        >>> 4
+        >>> obj
+        >>> {x: 2, y: 3}  //z property not added
+
+        //cannot change value of property
+        >>> obj.x = 99
+        >>> 99
+        >>> obj
+        >>> {x: 2, y: 3}    //the value of x cannot be modified
+        
+        //type error under strict mode , if you try to change the value of property
+        >>> 'use strict'
+        >>> obj.x = 88
+        >>> Uncaught TypeError:
+        
+        
+        
