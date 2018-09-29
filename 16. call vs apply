@@ -50,3 +50,29 @@ let home = new Home('samsung');
 watch.apply(home,['doremon', 'little singham']);
 >>> samsung doremon little singham
 
+*****************************************************************************************************
+
+another example :
+
+function demofunction(a,b){
+	console.log(this.name+ a + b);
+}
+undefined
+var cup = function(name){
+	this.name = name;
+}
+let c1 = new cup('coffee');
+let c2 = new cup('tea');
+
+demofunction.call(c1,'sugar','biscuit');
+>>> coffeesugarbiscuit
+
+demofunction.call(c2,'sugar','biscuit');
+>>> teasugarbiscuit
+
+//sending arguments as array
+demofunction.apply(c2,['sugar','biscuit']);
+>>> teasugarbiscuit
+
+demofunction.apply(c1,['sugar','biscuit']);
+>>> coffeesugarbiscuit
