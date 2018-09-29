@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>testing</title>
+</head>
+<body>
+	<p>this is simple text</p>
+	<p id='demo'></p>
+	<button id='get_data'>click</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+    $("#get_data").click(function(){
+        $.get("https://reqres.in/api/users/2", function(data, status){
+            
+            document.getElementById('demo').innerHTML = JSON.stringify(data);
+        });
+    });
+});
+</script>
+</body>
+</html>
