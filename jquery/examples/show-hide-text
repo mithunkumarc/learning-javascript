@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery hello world</title>
+	 <script src="jquery-3.3.1.min.js"></script>//saved local jquery file
+</head>
+<body>
+<p id = 'para_text'>hello</p>
+<br>
+<button id='hide_button'>hide</button>
+<br>
+<button id='show_button'>show</button>
+<script type="text/javascript">
+	 	$(document).ready(function (){
+			$('#hide_button').click(function(event) {
+				$("p").hide();
+			});
+			$('#show_button').click(function(event) {
+				$("p").show();
+			});						
+		});
+
+</script>
+</body>
+</html>
