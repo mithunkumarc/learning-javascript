@@ -1,0 +1,47 @@
+##### change content of child nodes
+
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <title>Page Title</title>
+        </head>
+        <body>
+
+          <div id = "main">
+              <h1>My First Heading</h1>
+                <h1>My First Heading</h1>
+                <h1>My First Heading</h1>
+                <h1>My First Heading</h1>
+                <h1>My First Heading</h1>
+                <h1>My First Heading</h1>
+            </div>
+            <button onclick='old()'>old</button>
+            <button onclick='new_heading()'>new</button>
+        <p>My first paragraph.</p>
+
+        <script>
+
+          function old(){
+            var child_Nodes = 		document.getElementById('main').childNodes;
+          for(let c = 0 ; c < child_Nodes.length; c++){
+            if(child_Nodes[c].innerHTML != undefined){
+              child_Nodes[c].innerHTML = 'Old heading...';
+            }
+          }
+          }
+
+
+            function new_heading(){
+              var child_Nodes = document.getElementById('main').childNodes;
+          for(let c = 0 ; c < child_Nodes.length; c++){
+            if(child_Nodes[c].innerHTML != undefined){
+              child_Nodes[c].innerHTML = 'New heading...';
+            }
+          }
+            }
+
+
+        </script>
+        </body>
+        </html>
