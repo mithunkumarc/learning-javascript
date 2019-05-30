@@ -37,4 +37,7 @@
 
 #### example 13 : setter and getter properties
 
+
+#### example 14 : instanceof
+
 #### more : https://github.com/mithunkumarc/learning-javascript/tree/master/objects
