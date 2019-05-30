@@ -36,3 +36,5 @@
 #### example 12 : //protected property : Protected properties are usually prefixed with an underscore _.
 
 #### example 13 : setter and getter properties
+
+#### more : https://github.com/mithunkumarc/learning-javascript/tree/master/objects
