@@ -325,3 +325,15 @@ console.log(cm.power);
 */
 
 
+/*
+
+//example 14 : instanceof
+class Animal{
+
+}
+let a = new Animal();
+console.log(a instanceof Animal);
+
+
+
+*/
