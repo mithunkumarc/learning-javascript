@@ -1,28 +1,26 @@
-var array1 = new Array(1,2,3);
-var array2 = Array(1,2,3);
-var array3 = [1,2,3];
+#### ways to create javascript arrary
 
-output : 
-array1
->>> [1, 2, 3]
-array2
->>> [1, 2, 3]
-array3
->>> [1, 2, 3]
-*****************************************************************************************************
-length : property : returns the size of array
+	let array1 = new Array(1,2,3); // best way to create array
+	let array2 = Array(1,2,3);     // uses constructor
+	let array3 = new Array(2,3,4);
+	let array4 = [1,2,3];
 
-var arr = new Array(5);
-arr.length
-5
-
---or--
-
-var arr1 = [];
-arr1.length = 5;
+---
 
 
-* Note : array.length is same as array['length']
+#### length : property : returns the size of array
+
+	let arr = new Array(5);
+	console.log(arr.length)
+	// output : 5
+
+	let numbers = [];
+	numbers.length = 5;
+	console.log(numbers);//five undefined elements
+	// output :  [undefined, undefined, undefined, undefined, undefined]
+
+
+	Note : array.length is same as array['length']
 
 ******************************************************************************************************
 
