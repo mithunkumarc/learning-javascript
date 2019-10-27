@@ -15,3 +15,17 @@ function fibonocci(number){
 
 let fibSeries = fibonocci(10);
 console.log(fibSeries);
+
+
+// dynaimc programming 
+function fib(n){
+  let table = [];
+  table.push(1);
+  table.push(1);
+  for(let i = 2 ; i <= n ; i++){
+    table.push(table[i-1] + table[i-2]);
+  }
+  console.log(table);
+}
+
+fib(6)
