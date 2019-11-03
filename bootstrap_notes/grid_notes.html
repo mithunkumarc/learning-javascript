@@ -1,0 +1,56 @@
+<!--
+Grid Classes
+
+      .col- (extra small devices - screen width less than 576px)
+      .col-sm- (small devices - screen width equal to or greater than 576px)
+      .col-md- (medium devices - screen width equal to or greater than 768px)
+      .col-lg- (large devices - screen width equal to or greater than 992px)
+      .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+
+        each class target specific screen size
+
+        and each class scales up
+        if you want same column size for sm md lg and xl , just use sm, it will cover all.
+
+        classes can be combined together for responsive layout
+
+        below example demonstrates, large screen grid organizes grid to 4-4-4
+        reduce the size of the screen when it reaches small (sm), grid organizes to 3-3-3
+        
+        The classes above can be combined to create more dynamic and flexible layouts.
+
+        Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+
+        helpfull link : 
+        https://stackoverflow.com/questions/19865158/what-is-the-difference-among-col-lg-col-md-and-col-sm-in-bootstrap
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>Three equal width columns</h1>
+  <p>Note: below example demonstrates, large screen grid organizes grid to 4-4-4
+        reduce the size of the screen when it reaches small (sm), grid organizes to 3-3-3
+  </p>
+  <div class="row">
+    <div class="col-sm-3 col-lg-4" style="background-color:lavender;">.col</div>
+    <div class="col-sm-3 col-lg-4" style="background-color:orange;">.col</div>
+    <div class="col-sm-3 col-lg-4" style="background-color:lavender;">.col</div>
+  </div>
+</div>
+
+</body>
+</html>
