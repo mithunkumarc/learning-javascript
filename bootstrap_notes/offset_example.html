@@ -1,0 +1,22 @@
+https://stackoverflow.com/questions/38716361/what-exactly-is-offset-in-bootstrap#
+
+
+
+Offsets are used for spacing elements in the responsive grid.
+
+The unit is based on the column layout.
+
+You can define an offset this way : col-[breakpoint]-offset-[number of colums]
+
+In this example, admitting our layout is made of 12 columns :
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <p>test</p>
+    </div>
+</div>
+Means that in the medium range of the grid system, the element will have a width of 6 colums and there will be 3 blank columns before the element (and as a consequence, will have 3 blank colums after).
+
+The result of this is a div of 6 colums width, centered in the container.
+
+There is a example showing how it renders in the Bootstrap documentation. https://getbootstrap.com/docs/4.3/layout/grid/#offsetting-columns
