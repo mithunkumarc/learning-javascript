@@ -9,3 +9,6 @@
             avoid array like object, a = {}, a[0] = 1, wron idea
             if u store large elements , go for new array(1000) , it may create hole but engine can predict how much memory needed
             
+
+
+#### todo : metaprogramming in javascript : https://www.agiledeveloper.com/downloads.html
