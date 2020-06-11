@@ -45,3 +45,7 @@
 #### index.js
 
             import { Hello, World } from './Hello';    // notice curly braces
+            
+#### note : named export : import all named exports
+
+            import * as mycomp from "./MyComponent";
