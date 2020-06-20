@@ -1,3 +1,4 @@
+run code in nodejs to use object.entries()  returns iterator
 
         const names = ['tom', 'jerry', 'tyke'];
 
@@ -16,7 +17,7 @@ prints index
 
         output : 0 1 2
 
-entries : returns iterator
+entries : returns iterator, use for of and run code in nodejs
 
         const it = names.entries()
         const data;
