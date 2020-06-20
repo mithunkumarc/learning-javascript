@@ -27,3 +27,12 @@ Another example
                 greet(...[...names, ...more]);
                 //jack jill bob troy jane
                 greet(...[...names, 'Bob', ...more]);
+
+---
+
+spreading object ; 
+
+                const sam = {name: 'sam', age:2}
+                console.log({...sam}); // {name: "sam", age: 2}
+                console.log({...sam,age:4}); // {name: "sam", age: 4}
+                console.log(sam); // {name: "sam", age: 2}
