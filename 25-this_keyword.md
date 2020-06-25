@@ -90,4 +90,26 @@ four rules to understand this :
         console.log(result.name);  // osama
 
 
+5 arrow funcitons :  this in arrow function will always take his value from the outside (Lexical scope).
+
+                        var group = {
+                          title: "Our Group",
+                          students: ["John", "Pete", "Alice"],
+
+                          showList() {
+                            this.students.forEach(
+                                 (student) => { 
+                                               // this here refer to group object
+                                          console.log(this.title + ': ' + student);
+                                        }
+                            );
+                          }
+                        };
+
+                        group.showList();
+
+                        output : 
+                        Our Group: John
+                        Our Group: Pete
+                        Our Group: Alice
 
