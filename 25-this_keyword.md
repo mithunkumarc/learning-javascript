@@ -76,7 +76,8 @@ four rules to understand this :
         greet.apply(obj); // raju
  
  
-        //
+4 new operator binding
+
         function Foo() {        
             this.name = 'Osama';
                 this.say = function () {
