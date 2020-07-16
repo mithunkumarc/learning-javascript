@@ -13,3 +13,4 @@
 
 #### todo : metaprogramming in javascript : https://www.agiledeveloper.com/downloads.html
             rediscovering javascript
+            https://scotch.io/tutorials/understanding-memoization-in-javascript
