@@ -25,3 +25,7 @@
 #### watchout
 
             https://indepth.dev/
+
+#### resources
+
+            https://github.com/sorrycc/awesome-javascript
