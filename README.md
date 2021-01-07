@@ -25,6 +25,7 @@
 #### watchout
 
             https://indepth.dev/
+            https://github.com/Apress/javascript-next
 
 #### resources
 
