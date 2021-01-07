@@ -30,3 +30,4 @@
 #### resources
 
             https://github.com/sorrycc/awesome-javascript
+            https://github.com/Apress
