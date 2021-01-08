@@ -9,3 +9,13 @@ contains group of specs
 3. A spec whose expectations all succeed will be passing and a spec with any failures will fail. 
 4. The name it is a pronoun for the test target, not an abbreviation of anything. 
 5. It makes the spec more readable by connecting the function name it and the argument description as a complete sentence.
+
+
+#### fdescribe() 
+
+if you want to test only specific suite(describe) use prefix "f".
+
+#### fit() : 
+
+if you want to test only specific spec(it) use prefix "f".
+
