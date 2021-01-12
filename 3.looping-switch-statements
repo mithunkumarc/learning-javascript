@@ -1,0 +1,74 @@
+#### for...in : reading values from array
+
+		a = [10,20,30]
+		for(let i in a){
+			console.log(a[i]);
+		}
+		#output :  
+		10
+		20
+		30
+
+#### index based for loop
+
+		for(let i = 0; i< 10 ; i++){
+			console.log(i);
+		}
+
+
+#### loop can be used to add dynamic content inside html dom
+
+		<body>
+		<p id="demo"></p>
+		<script>
+			var data = '';
+			for(let i = 0; i< 10 ; i++){
+			data += "hello"+i+"<br>";
+		    }
+		    document.getElementById('demo').innerHTML = data;
+		</script>
+		</body>
+
+		# output : demo tag updated by for loop
+
+#### while loop : check conditin first and executes statements
+
+		let n = 10;
+		while(n> 0){
+			console.log(n);
+			n--;
+		}
+
+
+#### do while : first execute statements then check condtion
+
+		let n = 10;
+		do{
+		  console.log(n);
+		}while(n>0);
+
+
+
+
+#### switch supports numbers, strings. cases can have expression.
+
+#### switch with cases having expressions
+
+		function hello(count) {
+		  let i = 1;
+		  switch (count) {
+		    case i:
+		      console.log("i");
+		      break;
+		    case i + 1:
+		      console.log("i + 1");
+		      break;
+		    default:
+		      console.log("no match");
+		  }
+		}
+
+		hello(0); // no match
+		hello(1); // i, count equal to i
+		hello(2); // i + 1, count equal to i + 1
+		hello(3); // no match
