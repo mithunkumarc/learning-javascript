@@ -7,3 +7,5 @@ never add newline with return statement
 
       >> hello();
       >> undefined
+
+ // JavaScript assumes a semicolon after return
