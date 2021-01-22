@@ -27,3 +27,6 @@ if you want to disable specific suite(describe) use prefix "x".
 
 if you want to disable specific spec(it) use prefix "x".
 
+#### custom matchers / third party matchers can be used
+
+#### suites(describe) can be nested
