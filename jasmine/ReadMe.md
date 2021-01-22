@@ -11,11 +11,19 @@ contains group of specs
 5. It makes the spec more readable by connecting the function name it and the argument description as a complete sentence.
 
 
-#### fdescribe() 
+#### fdescribe() : run specific suite
 
 if you want to test only specific suite(describe) use prefix "f".
 
-#### fit() : 
+#### fit() : run specific test/spec
 
 if you want to test only specific spec(it) use prefix "f".
+
+#### xdescribe() : disable specific suite
+
+if you want to disable specific suite(describe) use prefix "x".
+
+#### xit() : disable specific test/spec
+
+if you want to disable specific spec(it) use prefix "x".
 
