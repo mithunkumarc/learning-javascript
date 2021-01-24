@@ -3,7 +3,7 @@ And Macro tasks will execute once the browser tasks and finished all previously 
 
 
 microtask executed first : javascript level  
-macrotasks executed last : browser  
+macrotasks executed last : browser  level apis
 
 
 #### macrotasks: setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering  
