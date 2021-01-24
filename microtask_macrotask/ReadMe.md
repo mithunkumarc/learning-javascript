@@ -1,3 +1,11 @@
+Micro tasks are executed immediately after the code that kicked them off completes.   
+And Macro tasks will execute once the browser tasks and finished all previously queued tasks.   
+
+
+microtask executed first : javascript level  
+macrotasks executed last : browser  
+
+
 #### macrotasks: setTimeout, setInterval, setImmediate, requestAnimationFrame, I/O, UI rendering  
 #### microtasks: process.nextTick, Promises, queueMicrotask, MutationObserver  
 
