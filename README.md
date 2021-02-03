@@ -31,3 +31,7 @@
 
             https://github.com/sorrycc/awesome-javascript
             https://github.com/Apress
+
+#### datastructures and algorithms
+
+            https://github.com/trekhleb/javascript-algorithms
