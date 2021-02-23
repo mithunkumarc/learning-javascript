@@ -1,28 +1,46 @@
+#### simple arrow function : add
 
-let add = (x,y) => x+y;
-console.log(add(3,4));
-output : 7
-
-
-**********************************************
-
-let even = x => x%2 == 0;
-let numbers = [1,2,3,4,5,6,7,8];
-console.log(numbers.filter(even));
-
-output : [2, 4, 6, 8]
+        let add = (x,y) => x+y;
+        console.log(add(3,4));
+        output : 7
 
 
-**********************************************
+#### filter
 
-let numbers = [1,2,3,4,5,6,7,8];
-let multiplyby5 = x => x * 5;
-console.log(numbers.map(multiplyby5));
-output :  [5, 10, 15, 20, 25, 30, 35, 40]
+        let even = x => x%2 == 0; // predicate
+        let numbers = [1,2,3,4,5,6,7,8];
+        console.log(numbers.filter(even));
 
-**********************************************
-let numbers = [1,2,3,4,5,6,7,8];
-let sum = (x,y) => x+y;
-console.log(numbers.reduce(sum));
+        output : [2, 4, 6, 8]
 
-output : 36
+#### map
+
+        let numbers = [1,2,3,4,5,6,7,8];
+        let multiplyby5 = x => x * 5;
+        console.log(numbers.map(multiplyby5));
+        output :  [5, 10, 15, 20, 25, 30, 35, 40]
+
+
+#### reduce
+
+        let numbers = [1,2,3,4,5,6,7,8];
+        let sum = (x,y) => x+y;
+        console.log(numbers.reduce(sum));
+
+        output : 36
+
+
+#### map vs forEach 
+
+
+        // map is immutable, gives new copy with modified value
+        // original object is unchanged
+        const data = [{name:"raj"},{name:"saj"},{name:"naj"}];
+        const transform2 = (ob) => {return {"name":ob.name.toUpperCase()}};
+        data.map(transform2);
+
+
+        // forEach is mutable original copy gets modified
+        // used for iterating too
+        const data = [{name:"raj"},{name:"saj"},{name:"naj"}];
+        data.forEach(ob => ob['name'] = ob['name'].toUpperCase());
