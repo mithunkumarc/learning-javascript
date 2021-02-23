@@ -25,3 +25,38 @@ function* foo(){
  
  g.next().value;
  g.next().value;
+
+
+***************************************
+
+Here is the infinitely looping array:
+
+function* makeGenLoop(arr) {
+  for (let i = 0;; i++) {
+  if (i === arr.length) i = 0;
+    yield arr[i];
+  }
+}
+
+const myGen = makeGenLoop([0, 3, 7, 2, 5]);
+console.log(myGen.next());
+
+*******************************************
+
+Here is how to make an iterable from an object:
+const myObj = {
+  name: 'Stanley', 
+  Job: 'Web Dev', 
+  age: 28
+}
+
+myObj[Symbol.iterator] = function* () {
+  for (const prop in this) {
+    yield this[prop];
+  }
+}
+
+console.log([...myObj]); // > ["Stanley", "Web Dev", 28]
+for (const val of myObj) {
+  console.log(val)
+}
