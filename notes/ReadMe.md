@@ -31,3 +31,15 @@ Both of these do exactly what compilers do: Take one language and convert into a
      optimization : reuse repeated/duplicated code.
      now js engines uses both interpreter and compiler(like JIT)
      not js is both interpreted and compiled programming language
+     
+#### avoid below to help code optimization for compiler
+
+      eval
+      for...in : use object.keys
+      with 
+      delete : compiler translated class already if you delete a property again need to compile.
+      arugments : need clarity 
+      
+      above affects two things in compiler : inlince caching and Hidden classes(need more info)
+
+      conclusion : write predictive code 
