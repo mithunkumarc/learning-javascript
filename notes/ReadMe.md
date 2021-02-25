@@ -25,8 +25,9 @@ Both of these do exactly what compilers do: Take one language and convert into a
 
 #### is JavaScript is interpreted
 
-      initially js was interpreted.
+     initially js was interpreted.
      interpreter transforms or interprets a high-level programming code into code that can be understood by the machine.
      interpreter was slow as there was no/few optimization.
      optimization : reuse repeated/duplicated code.
      now js engines uses both interpreter and compiler(like JIT)
+     not js is both interpreted and compiled programming language
