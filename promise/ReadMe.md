@@ -20,10 +20,9 @@
 
 #### Rendering pipeline
 
-        renders UI 60 frames per second or something
-        it runs only when there is not task/javascript code not running / or inbetween code /task running
-        if you run long operationg which is blocked, 
-        UI will block as Rendereng pipeling will not work when there is a code/task running
+1. renders UI 60 frames per second or something
+2. it runs only when there is not task/javascript code not running / or inbetween code /task running
+3. if you run long operationg which is blocked, UI will block as Rendereng pipeling will not work when there is a code/task running
 
 #### Rendering pipeling blocking : solution
 
