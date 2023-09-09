@@ -8,7 +8,7 @@
     call stack : synchronous statements or expressions goes to call stack
     task queue : Asynchronous statements like setTimeout/promise goes to task queue
 
-#### Task priority
+#### Task queue priority
 
         1. Tasks from the same task queue are executed in order they arrived
         2. tasks of the same type should go to the same task queue
