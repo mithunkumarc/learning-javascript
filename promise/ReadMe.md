@@ -13,6 +13,13 @@
         1. Tasks from the same task queue are executed in order they arrived
         2. tasks of the same type should go to the same task queue
 
+#### Rendering pipeline
+
+        renders UI 60 frames per second or something
+        it runs only when there is not task/javascript code not running
+        if you run long operationg which is blocked, 
+        UI will block as Rendereng pipeling will not work when there is a code/task running
+
 #### promise.then() vs async/await
 
     promise.then() : 
