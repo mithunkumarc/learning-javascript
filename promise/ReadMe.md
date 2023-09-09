@@ -82,7 +82,7 @@
 
 #### Promise.race
 
-        output : quickest/first promise resolved
+        output : quickest/first promise resolved/rejected
 
 read : 
     
