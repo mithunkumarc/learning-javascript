@@ -1,7 +1,17 @@
-Javascript engine execute all sync operations first and then start Async operation so that main thread/flow not get blocked.  
-Javascript engine will start separtate task for promise/async operation in event loop.  
-when promise is completed it will be presented/executed in main thread.   
-Promise also execute on main thread but on event loop not immediately but after sync operations/code.
+1. Javascript engine execute all sync operations first and then start Async operation so that main thread/flow not get blocked.  
+2. Javascript engine will start separtate task for promise/async operation in event loop.  
+3. when promise is completed it will be presented/executed in main thread.   
+4. Promise also execute on main thread but on event loop not immediately but after sync operations/code.
+
+#### call statck vs task queue
+
+    call stack : synchronous statements or expressions goes to call stack
+    task queue : Asynchronous statements like setTimeout/promise goes to task queue
+
+#### Task priority
+
+        1. Tasks from the same task queue are executed in order they arrived
+        2. tasks of the same type should go to the same task queue
 
 #### promise.then() vs async/await
 
