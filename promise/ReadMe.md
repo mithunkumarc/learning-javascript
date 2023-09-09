@@ -84,7 +84,11 @@
 
         output : quickest/first promise resolved/rejected
 
-read : 
+#### promise.any
+
+        output : first promise which is resolved, ignores rejected
+
+#### practice : 
     
     https://github.com/codediodeio/async-await-pro-tips
     https://github.com/jawache/async-javascript-workshop/tree/master/node
