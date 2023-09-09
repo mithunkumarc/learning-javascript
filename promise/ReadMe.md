@@ -80,6 +80,10 @@
     
     async/await : block executin till it gets output from promise
 
+#### Promise.race
+
+        output : quickest/first promise resolved
+
 read : 
     
     https://github.com/codediodeio/async-await-pro-tips
