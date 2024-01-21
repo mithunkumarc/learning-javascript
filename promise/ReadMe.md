@@ -94,3 +94,4 @@
     https://github.com/jawache/async-javascript-workshop/tree/master/node
     https://github.com/vp-online-courses/asynchronous-javascript-tutorial
     https://github.com/vp-online-courses/asynchronous-javascript-tutorial/tree/master/5-promises
+    https://www.youtube.com/watch?v=exBgWAIeIeg
