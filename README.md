@@ -21,6 +21,7 @@
             rediscovering javascript
             https://scotch.io/tutorials/understanding-memoization-in-javascript
             https://github.com/btroncone/learn-rxjs
+            shadow dom and webcomponents
             
 #### books : 
 
