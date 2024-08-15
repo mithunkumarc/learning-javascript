@@ -46,3 +46,9 @@
 #### to-do examples
 
             https://github.com/singhsanket143/AirTicketBookingService/tree/master
+            cookies
+            session
+            shadow dom
+            http headers
+            nodejs clusters
+            custom element ( angular / react component using plane html+css+javascript)
