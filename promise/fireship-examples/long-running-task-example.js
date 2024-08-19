@@ -5,6 +5,7 @@ const blocker = () => {
   /*
   // blocking : dont put long running task in the callback function(resolve/reject)
   return new Promise((res, rej) => {
+    // this is a callback function
     let i = 0;
     while(i < 1000000000) {
       i++;
