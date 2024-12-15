@@ -18,3 +18,9 @@ This was a long-winded way of explaining WHY the addEventListener() allows you t
 To do this, you have to use the third argument to the addEventListener() method, which is the useCapture parameter. 
 In modern browsers, this defaults to false which prefers the bubbling phase.
 
+#### event propagation
+The stopPropagation() method of the Event interface prevents further propagation of the current event in the capturing and bubbling phases. It will execute other handlers on current element.
+
+
+
+#### event preventDefault
