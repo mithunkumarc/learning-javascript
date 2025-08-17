@@ -22,6 +22,8 @@
             https://scotch.io/tutorials/understanding-memoization-in-javascript
             https://github.com/btroncone/learn-rxjs
             shadow dom and webcomponents
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain
+            angular build library and use it
             
 #### books : 
 
