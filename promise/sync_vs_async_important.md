@@ -56,3 +56,4 @@ Web Workers / Worker Threads	❌ No	Background threads
 If you're trying to offload heavy computation, Promises won't help on their own — they only help with managing asynchronous flow, not threading.
 
 
+### fireship youtube video the async await episode
