@@ -99,3 +99,10 @@ In **JavaScript**, especially in the **browser** or **Node.js**, **asynchronous*
 - Async code still runs on the **main thread**, just scheduled later.
 - Use **Web Workers** or **Worker Threads** if you truly need multithreading.
 
+
+| Type            | Examples                    | Runs When                  | Priority  |
+| --------------- | --------------------------- | -------------------------- | --------- |
+| **Main Thread** | Regular JS code             | Immediately                | 🥇 First  |
+| **Microtasks**  | `Promise.then()`, `await`   | After main thread finishes | 🥈 Second |
+| **Macrotasks**  | `setTimeout`, `setInterval` | After microtasks complete  | 🥉 Third  |
+
