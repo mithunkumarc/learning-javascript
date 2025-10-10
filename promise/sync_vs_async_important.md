@@ -48,10 +48,14 @@ If you want real multithreading, you must explicitly use:
     WebAssembly threads (in advanced use cases)
 
 💡 Summary:
-Code Type	Runs on Main Thread?	When?
-Code inside Promise constructor	✅ Yes	Immediately
-.then() / await callbacks	✅ Yes	Later via microtask queue
-Web Workers / Worker Threads	❌ No	Background threads
+
+| Code Type                      | Runs on Main Thread? | When?                      |
+|-------------------------------|----------------------|----------------------------|
+| Code inside Promise constructor | ✅ Yes              | Immediately                |
+| `.then()` / `await` callbacks  | ✅ Yes              | Later via microtask queue |
+| Web Workers / Worker Threads   | ❌ No               | Background threads         |
+
+
 
 If you're trying to offload heavy computation, Promises won't help on their own — they only help with managing asynchronous flow, not threading.
 
