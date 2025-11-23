@@ -16,8 +16,8 @@
 ## practice
 
             javascript projects which include css
-            ui components like calender, timeline, table , charts
-            custom buttoms, forms , chat
+            ui components like calender, timeline, table , charts...
+            custom buttoms, forms , chat...
 
 
 #### todo : 
