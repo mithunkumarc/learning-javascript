@@ -13,6 +13,12 @@
             it may create hole but engine can predict how much memory needed
             
 
+## practice
+
+            javascript projects which include css
+            ui components like calender, timeline, table , charts
+            custom buttoms, forms , chat
+
 
 #### todo : 
 
