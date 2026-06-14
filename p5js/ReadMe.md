@@ -73,3 +73,22 @@ Would you like to start on Phase 1 right now with a 10-line setup script, or do 
 [14] [https://www.futurelearn.com](https://www.futurelearn.com/info/courses/fundamentals-of-creative-technologies-and-interactive-experiences/0/steps/451589)
 [15] [https://naziafakhruddin.medium.com](https://naziafakhruddin.medium.com/creating-2d-texture-on-a-3d-shape-in-p5-js-8ee8bfbfee4)
 [16] [https://dev.to](https://dev.to/devmirx/how-to-create-simple-sketching-art-with-p5js-a-step-by-step-tutorial-ama)
+
+
+Here is the curated book list formatted into a scannable Markdown table, mapping each book directly to its corresponding phase from your learning roadmap:
+
+| Book Title [1, 2, 3, 4] | Authors | Best For (Roadmap Phase) | Core Value / Why It Fits |
+|---|---|---|---|
+| Getting Started with p5.js | Lauren McCarthy, Casey Reas, Ben Fry | Phase 1 & 2 (Essentials & Grids) | Written by the library creator; the absolute gentlest introduction to coordinate spaces and basic loops. |
+| Learn JavaScript with p5.js | Engin Arslan | Phase 1 & 2 (Essentials & Grids) | Teaches core coding syntax completely through visual sketches instead of boring, dry text terminals. |
+| The Nature of Code | Daniel Shiffman | Phase 2 & 3 (Waves & Noise) | The gold standard for visual math; easily explains vectors, sine waves, and Perlin noise natively in p5.js [The Nature of Code: Simulating Natural Systems with JavaScript]. |
+| Generative Design | Benedikt Groß, Hartmut Bohnacker, Julia Laub | Phase 2 & 3 (Pattern Architecture) | A high-end visual recipe book containing hundreds of beautiful, open-source geometric grid and layout archetypes. |
+| Code as Creative Medium | Golan Levin, Tega Brain | Phase 4 & 5 (Web & Interactive Systems) | A creative project handbook packed with exercises to help you turn code into responsive, interactive web art. |
+
+Which phase do you think you will tackle first? I can provide you with a free web-editor link or a minimal code snippet tailored to that exact book track to help you start practicing!
+
+[1] [https://archive.p5js.org](https://archive.p5js.org/books/)
+[2] [https://makeabilitylab.github.io](https://makeabilitylab.github.io/physcomp/communication/p5js-serial.html)
+[3] [https://archive.p5js.org](https://archive.p5js.org/books/)
+[4] [https://archive.p5js.org](https://archive.p5js.org/books/)
+
